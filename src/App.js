@@ -35,7 +35,7 @@ function App() {
   console.log(meanings ,'meanings');
   useEffect(() => {
     dictionaryApi();
-  }, [word,category]);
+  }, [word,category,dictionaryApi]);
   
   return (
     <div className="App" style={{height:'100vh',backgroundColor:lightMode? "#fff":'#282c34',
