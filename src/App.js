@@ -35,7 +35,8 @@ function App() {
   console.log(meanings ,'meanings');
   useEffect(() => {
     dictionaryApi();
-  }, [word,category,dictionaryApi]);
+    // eslint-disable-next-line
+  }, [word,category]);
   
   return (
     <div className="App" style={{height:'100vh',backgroundColor:lightMode? "#fff":'#282c34',
